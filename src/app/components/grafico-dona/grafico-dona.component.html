@@ -1,0 +1,15 @@
+<div class="card">
+  
+  <div class="card-body">
+    <h4 class="card-title">{{ graficaData.leyenda }}</h4>
+    
+    <div style="display: block">
+        <canvas 
+          baseChart 
+          [data]="graficaData.data" 
+          [labels]="graficaData.labels" 
+          [chartType]="graficaData.type"></canvas>
+      </div>
+
+    </div>
+  </div>
